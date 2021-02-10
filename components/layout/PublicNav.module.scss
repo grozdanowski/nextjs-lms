@@ -1,0 +1,45 @@
+@import 'styles/helpers';
+
+.navbarContainer {
+  padding: calcRem(20) calcRem(40);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: calcRem(50);
+  align-items: center;
+}
+
+.headerLogo {
+  font-weight: normal;
+  font-size: calcRem(32);
+  color: $text-color;
+
+  span {
+    font-weight: 900;
+  }
+}
+
+.navbarMenu {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(0, auto) );
+  justify-content: end;
+  grid-gap: calcRem(30);
+  align-items: center;
+
+  a {
+    color: $text-color;
+    font-weight: bold;
+    font-size: calcRem(16);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .navButton {
+    display: block;
+    padding: calcRem(10) calcRem(25);
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: calcRem(50);
+  }
+}

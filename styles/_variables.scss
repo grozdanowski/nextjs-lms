@@ -1,0 +1,13 @@
+@import './functions';
+
+$base-font-size: 16px;
+
+$primary-color: #0090c1;
+$text-color: #181818;
+$light-text-color: #727272;
+$light-border-color: #D8D8D8;
+$negative-color: #E02020;
+$body-background-color: #FAFAFA;
+
+$mobile-breakpoint: calcRem(800);
+$tablet-breakpoint: calcRem(1100);

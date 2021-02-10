@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'functions';
+@import 'shadows';
+
+.container, .containerWide, .containerNarrow {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 calcRem(20);
+
+  &:before, &:after {
+    display: none;;
+  }
+}
+
+.midMessageBox {
+  width: calcRem(560);
+  max-width: 90%;
+  padding: calcRem(60);
+  @include shadow-1;
+  border-radius: calcRem(10);
+  background-color: #fff;
+}
+
+.centeredContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.largeTextMessage {
+  font-size: calcRem(82);
+  font-weight: 900;
+  max-width: calcRem(860);
+  text-align: center;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.formInputsWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: calcRem(20);
+  padding-bottom: calcRem(20);
+}
+
+.dashboardContainer {
+  padding: calcRem(40);
+}
